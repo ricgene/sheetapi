@@ -1,0 +1,13 @@
+# change to 312
+runtime: python312
+# change to admin service ?
+service: sheets-api-service
+
+env_variables:
+  # move to gitignore ?
+  GOOGLE_APPLICATION_CREDENTIALS: "../../prizmpoc-jsonkey.json"
+
+handlers:
+- url: /.*
+  script: auto
+  secure: always
