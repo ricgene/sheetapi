@@ -28,7 +28,7 @@ def get_credentials():
             creds.refresh(Request())
         else:
             flow = InstalledAppFlow.from_client_secrets_file(
-                '../../prizmpoc-jsonkey.json', SCOPES)
+                '../../credentials.json', SCOPES)
             creds = flow.run_local_server(port=0)
         
         # Save the credentials for the next run
@@ -45,7 +45,7 @@ def main():
     # The ID of your spreadsheet
     # You can find this in the URL of your spreadsheet:
     # https://docs.google.com/spreadsheets/d/[SPREADSHEET_ID]/edit
-    SPREADSHEET_ID = 'your_spreadsheet_id'
+    SPREADSHEET_ID = '1Zr4pvLDXRWeyqKviIrY-ts_qGoiLX7gqA9OKwUpJSFI'
     
     # The range of cells we want to read
     RANGE_NAME = 'Sheet1!A1:E5'
