@@ -173,3 +173,7 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+google cloud / security / secrets
+token.*
+credentials*.json
